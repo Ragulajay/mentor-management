@@ -25,8 +25,8 @@ urlpatterns = [
     path('teacherlogin', LoginView.as_view(template_name='school/teacherlogin.html')),
 
 
-    path('afterlogin', views.afterlogin_view,name='afterlogin'),
-    path('logout', LogoutView.as_view(template_name='school/index.html'),name='logout'),
+    # path('afterlogin', views.afterlogin_view,name='afterlogin'),
+    path('logout', LogoutView.as_view(template_name='school/index.html')),
 
 
     path('admin-dashboard', views.admin_dashboard_view,name='admin-dashboard'),
