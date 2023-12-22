@@ -25,7 +25,7 @@ urlpatterns = [
     path('teacherlogin', LoginView.as_view(template_name='school/teacherlogin.html')),
 
 
-    # path('afterlogin', views.afterlogin_view,name='afterlogin'),
+    path('afterlogin', views.afterlogin_view,name='afterlogin'),
     path('logout', LogoutView.as_view(template_name='school/index.html')),
 
 
