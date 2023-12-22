@@ -24,6 +24,9 @@
       width: 100%;
 
       z-index: 1;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: baseline;
     }
 
     .left_area h3 {
@@ -176,7 +179,7 @@
   <div class="sidebar">
     <center>
 
-      <img src="{% static "images/admin-icn.png" %}" class="profile_image" alt="">
+      <img src="{% static " images/admin-icn.png" %}" class="profile_image" alt="">
       <h4>Admin {{request.user.first_name}}</h4>
 
     </center>
