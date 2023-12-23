@@ -171,7 +171,7 @@
       <h3>SMS - Admin Panel</h3>
     </div>
     <div class="right_area">
-      <a href="/logout" class="logout_btn">Logout</a>
+      <a id="logoutButton" class="logout_btn">Logout</a>
     </div>
   </header>
   <!--header area end-->
@@ -179,7 +179,7 @@
   <div class="sidebar">
     <center>
 
-      <img src="{% static "images\admin-icn.png" %}" class="profile_image" alt="">
+      <img src="{% static " images\admin-icn.png" %}" class="profile_image" alt="">
       <h4>Admin {{request.user.first_name}}</h4>
 
     </center>
@@ -211,6 +211,18 @@
   <!--
       written By : sumit kumar
       -->
+
+  <script>
+    // Function to handle logout
+    function logout() {
+      // Perform any logout logic here (e.g., clearing session, user data, etc.)
+      // Redirect to index.html
+      window.location.href = 'index.html';
+    }
+
+    // Add a click event listener to the logout button
+    document.getElementById('logoutButton').addEventListener('click', logout);
+  </script>
 </body>
 
 </html>
