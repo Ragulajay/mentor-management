@@ -6,7 +6,8 @@ written by fb.com/sumit.luv
 from django.contrib import admin
 from django.urls import path
 from school import views
-from django.contrib.auth.views import LoginView,LogoutView
+from school.views import LogoutView
+from django.contrib.auth.views import LoginView
 
 
 
