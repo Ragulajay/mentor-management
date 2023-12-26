@@ -28,6 +28,7 @@ SECRET_KEY = 'k0ujs9pcw+7qohwas!o7_ept20$c@$)-b=qco8sgviy_f)((bc'
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+ALLOWED_METHODS = ['GET', 'POST', 'OPTIONS']
 
 
 # Application definition
