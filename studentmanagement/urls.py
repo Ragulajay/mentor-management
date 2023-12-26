@@ -8,7 +8,7 @@ from django.urls import path
 from school import views
 from django.contrib.auth.views import LoginView,LogoutView
 
-from views import LogoutView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
