@@ -14,8 +14,8 @@ def home_view(request):
 
 from django.shortcuts import render
 
-def LogoutView(request):
-    return render(request, 'school/index.html')
+# def LogoutView(request):
+#     return render(request, 'school/index.html')
 
 
 #for showing signup/login button for teacher

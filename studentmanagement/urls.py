@@ -6,8 +6,7 @@ written by fb.com/sumit.luv
 from django.contrib import admin
 from django.urls import path
 from school import views
-from school.views import LogoutView
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView,LogoutView
 
 
 
@@ -29,7 +28,7 @@ urlpatterns = [
 
 
     path('afterlogin', views.afterlogin_view,name='afterlogin'),
-    path('logout', LogoutView,name='logout'),
+    path('logout', LogoutView.as_view(template_name='school/index.html'), name='logout'),
 
 
     path('admin-dashboard', views.admin_dashboard_view,name='admin-dashboard'),
